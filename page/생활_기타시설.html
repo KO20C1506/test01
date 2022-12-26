@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.nav-link {
+	color: white; /*  font-weight: bolder; */
+}
+
+.card-body p a {
+	color: black;
+}
+
+.nav-link:hover {
+	color: gray;
+}
+
+.nav-item dropdown:hover {
+	color: #951e13;
+}
+
+#sidenav li a {
+	color: gray;
+}
+
+#sidenav li a:hover {
+	color: black;
+	font-weight: bolder;
+}
+
+#a {
+	font-size: 12px
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#bf {
+	min-height: 100%;
+	position: relative;
+}
+
+#b {
+	margin-top: 100px;
+	padding-bottom: 241px;
+}
+
+footer {
+	width: 100%;
+	height: 241px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 800px) {
+	#sidenav1 {
+		display: none;
+	}
+}
+
+#gl a {
+	color: black
+}
+
+#gl a:hover {
+	color: #951e13
+}
+
+#numberpage li a {
+	color: gray
+}
+
+#numberpage li a:hover {
+	color: #951e13
+}
+
+#topmenu a {
+	color: gray
+}
+
+.right_nav {
+	width: 70px;
+	height: 50px;
+	background-color: darkgray;
+	float: right;
+	position: fixed;
+	top: 70%;
+	right: 10%;
+	color: red;
+	text-align: center;
+	font-weight: bolder;
+	z-index: 10
+}
+
+.right_nav span {
+	width: 70px;
+	height: 40px;
+	border-bottom: solid 3px white;
+	display: block;
+}
+</style>
+<meta charset="UTF-8">
+<title>갤러리_동아리</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../engine0/style.css" />
+<script type="text/javascript" src="../engine0/jquery.js"></script>
+<body>
+
+	<a href="#"><nav class="right_nav">
+			<span style="background: gray; color: white;">^<br>TOP
+			</span>
+		</nav></a>
+
+	<div class="fixed-top">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div style="background-color: #951e13;">
+            <!-- 숨기기색상1 -->
+
+
+            <!-- 위에 네비 -->
+            <ul class="nav justify-content-end"
+               style="background-color: #951e13;">
+
+               <li class="nav-item"><a class="nav-link" href="#" id="a">자주묻는질문(FAQ)</a>
+               </li>
+               <li class="nav-item"><a class="nav-link"
+                  href="hogu/hogu_log.html" id="a">로그인/회원가입</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" id="a">LMS</a>
+               </li>
+               <li class="nav-item dropdown pr-5"><a
+                  class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                  role="button" aria-expanded="false" id="a">언어</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#" id="a">한국어</a> <a
+                        class="dropdown-item" href="#" id="a">English</a> <a
+                        class="dropdown-item" href="#" id="a">日本語</a>
+                  </div></li>
+               <form class="d-flex pr-5 pt-1 pb-1">
+                  <input class="form-control mr-1" type="search"
+                     placeholder="Search" aria-label="Search" id="a">
+                  <button class="btn btn btn-outline-light-success" type="submit">
+                     <span style="color: white">Search</span>
+                  </button>
+               </form>
+            </ul>
+
+            <!-- 아래네비 -->
+            <nav class="navbar navbar-expand-lg  navbar-light bg-light"
+               style="font-size: 30px;">
+               <a class="navbar-brand pl-5" href="index.html"><img
+                  src="../img/logo3.png" width=auto height="80"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 소개 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">총장말씀</a> <a
+                              class="dropdown-item" href="#">연혁</a> <a class="dropdown-item"
+                              href="#">비전</a> <a class="dropdown-item" href="#">오시는 길</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 연구 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">마법연구</a> <a
+                              class="dropdown-item" href="#">협회</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 입학 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">입학안내</a> <a
+                              class="dropdown-item" href="#">과정안내</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 생활 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">기숙사</a> <a
+                              class="dropdown-item" href="#">구내식당</a> <a
+                              class="dropdown-item" href="#">학생커뮤니티</a> <a
+                              class="dropdown-item" href="#">기타시설</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 갤러리 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">동아리활동</a> <a
+                              class="dropdown-item" href="#">학과활동</a>
+                        </div></li>
+                  </ul>
+               </div>
+            </nav>
+
+
+
+
+         </div>
+      </div>
+      <nav class="navbar navbar-dark" style="background-color: #951e13;">
+         <!-- 숨기기색상2 -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+      </nav>
+   </div>
+
+
+
+   <div id="bf">
+
+      <div id="b">
+
+         <div class="container-md mt-0 p-0">
+            <!-- 메인페이지 -->
+            <div class="container-md mt-0 p-0">
+               <!-- 본문 -->
+               <div class="d-flex flex-row-reverse text-dark"
+                  style="margin-top: 100px">
+
+                  <p class="mr-5" style="font-size: 13px;" id="topmenu">
+                     <a href="index.html">HOME</a> > <a href="#">생활</a> > <a href="#">기타시설</a>
+                     <!-- 이동할 페이지 링크 -->
+                  </p>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-3">
+                        <!-- 옆에메뉴 -->
+                        <div class="pt-0 ml-5" style="height: auto; width: auto"
+                           id="sidenav1">
+                           <ul id="sidenav" class="nav flex-column"
+                              style="font-size: 20px;">
+                              <p style="font-size: 35px; font-weight: bolder;">생활</p>
+                              <br>
+                              <li class="nav-item"><a class="nav-link" href="#">기숙사</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">구내식당</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">학생커뮤니티</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#"
+                                 style="color: #951e13; font-weight: bolder;">기타시설</a></li>
+                           </ul>
+                        </div>
+
+                     </div>
+                     <div class="col-8">
+                        <p style="color: #951e13; font-size: 35px">기타시설</p>
+                        <div class="row">
+                           <div class="col">
+                              <hr style="border: solid 5px; border-color: #951e13;">
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="cal">
+                             <br>
+                             <div class="생활기타시설소개" style="text-align:left ;font-size:30px; font-weight: bolder; " >
+                               <hr style="border: solid 2px; border-color: #951e13;">
+                               <img src="../img/비밀의방.png" width=100% height=100%>
+                               <hr style="border: solid 2px; border-color: #951e13;">
+                               Other facilities 1 : 비밀의 방
+                               <hr style="border: solid 2px; border-color: #951e13;">
+                               <p style="text-align:left ;font-size:20px;">호그와트의 설립 역사에 의하면 슬리데린의 창립자 살라자르 슬리데린이 <br>
+                                그리핀도르의 창립자인 고드릭 그리핀도르와의 의견 차이로 학교를 떠날 때,<br>
+                                마법을 가르칠 가치가 없다고 판단되는 학생들을 제거하기 위해 다른 창립자들 <br>
+                                몰래 만든 공간이라고 전해진다.<br>
+                                자신의 후계자가 아니면 해제할 수 없는 봉인으로 비밀의 방을 봉인하고<br>
+                                그 후계자가 호그와트에 입학했을 때 비밀의 방을 열고,<br>
+                                비밀의 방에 있는 끔찍한 것을 풀어 <br>
+                                마법을 배울 가치가 없는 학생들을 제거하도록 했다고 한다.</p>
+                                <br>
+                                <br>
+                                <hr style="border: solid 2px; border-color: #951e13;">
+                                <img src="../img/필요의방.png" width=100% height=100%>
+
+                                <hr style="border: solid 2px; border-color: #951e13;">
+                                Other facilities 2 : 필요의 방
+                                <hr style="border: solid 2px; border-color: #951e13;">
+                                <p style="text-align:left ;font-size:20px;">
+                                  원하는 사람들에게 필요한 것을 제공하는 능력을 가지고 있는 방이다.<br>
+                                  평소에는 입구가 숨겨져 있지만 8층에 있는<br>
+                                  '트롤들을 길들여 무용을 가르치려는 정신나간 바르나바의 어리석은 시도'<br>
+                                  가 그려져 있는 거대한 벽걸이 양탄자의<br>
+                                  맞은편에 있는 빈 벽 앞에서 원하는 것에 정신을 집중하고<br>
+                                  벽 앞을 3번 지나가면 입구가 생긴다.<br>
+                                 </p>
+                                 <br>
+                                 <br>
+
+                                 <hr style="border: solid 2px; border-color: #951e13;">
+                                 <img src="../img/버드나무.jpg" width=100% height=100%>
+                                 <hr style="border: solid 2px; border-color: #951e13;">
+                                 Other facilities 3 : 후려치는 버드나무<br>
+                                 <hr style="border: solid 2px; border-color: #951e13;">
+                                 <p style="text-align:left ;font-size:20px;">
+                                   호그와트에 있는 괴물 나무. 후려치는 버드나무라고 언급된다.<br>
+                                   말 그대로 가지에 무언가가 닿으면 바로 흥분하여 되받아치는 나무. <br>
+                                   나무의 옹이를 누르면 나무가 잠잠해진다. 알버스 덤블도어가 심은 나무로, <br>
+                                   그 목적은 리머스 루핀이 늑대인간이 되었을 때 누구도 접근하지 못하게 하는 것. <br>
+                                   나무뿌리 밑에는 호그스미드에 있는 악쓰는 오두막으로 통하는 비밀 통로가 있다. <br>
+                                   그 사이에 나무 뿌리 틈으로 들어가면 된다.<br>
+                                  <br>
+                                  <br>
+                                  <hr style="border: solid 2px; border-color: #951e13;">
+                                  <img src="../img/경기장.jpg" width=100% height=100%>
+                                  <hr style="border: solid 2px; border-color: #951e13;">
+                                  Other facilities 4 : 퀴디치 경기장 <br>
+                                  <hr style="border: solid 2px; border-color: #951e13;">
+                                  <p style="text-align:left ;font-size:20px;">
+                                  호그와트 기숙사 대항 퀴디치 경기가 펼쳐지는 곳. <br>
+                                  학생들은 물론, 기숙사 사감 교수들도 <br>
+                                  자기 기숙사의 퀴디치 우승에 대한 욕심이 대단하다.<br>
+                                   <br>
+                                   <br>
+                                  </div>
+                                 </div>
+                               </div>
+                              </div>
+                             </div>
+
+                           </div>
+                        </div>
+
+
+                     </div>
+                  </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+         crossorigin="anonymous"></script>
+
+      <footer
+         class="container-fluid navbar-fixed-bottom bg-dark mt-auto text-left text-white">
+         <!-- Grid container -->
+         <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+               <p style="color: white">사업자명 : 구본우
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-mail : hwmagic@hwschool.com
+               <p style="color: white">☎TEL : 02-1111-2222
+                  &nbsp;&nbsp;&nbsp;&nbsp; 주소 : UK where-ddd-aaaa-ccc
+               <p style="color: white">설립일 : 1998/08/22
+            </section>
+            <!-- Section: Social media -->
+         </div>
+         <!-- Grid container -->
+
+         <!-- Copyright -->
+         <div class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright: <a class="text-white"
+               href="#">호그와트.com</a>
+         </div>
+         <!-- Copyright -->
+      </footer>
+   </div>
+</body>
+</html>

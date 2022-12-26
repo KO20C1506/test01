@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+.box {
+    width: 400px;
+    height: 400px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav-link {
+   color: white; /*  font-weight: bolder; */
+}
+
+.card-body p a {
+   color: black;
+}
+
+.nav-link:hover {
+   color: gray;
+}
+
+.nav-item dropdown:hover {
+   color: #951e13;
+}
+
+#sidenav li a {
+   color: gray;
+}
+
+#sidenav li a:hover {
+   color: black;
+   font-weight: bolder;
+}
+
+#a {
+   font-size: 12px
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+#bf {
+   min-height: 100%;
+   position: relative;
+}
+
+#b {
+   margin-top: 100px;
+   padding-bottom: 241px;
+}
+
+footer {
+   width: 100%;
+   height: 241px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+@media screen and (max-width: 800px) {
+   #sidenav1 {
+      display: none;
+   }
+}
+
+#gl a {
+   color: black
+}
+
+#gl a:hover {
+   color: #951e13
+}
+
+#numberpage li a {
+   color: gray
+}
+
+#numberpage li a:hover {
+   color: #951e13
+}
+
+#topmenu a {
+   color: gray
+}
+
+.right_nav {
+	width: 70px;
+	height: 50px;
+	background-color: darkgray;
+	float: right;
+	position: fixed;
+	top: 70%;
+	right: 10%;
+	color: red;
+	text-align: center;
+	font-weight: bolder;
+	z-index: 10
+}
+
+.right_nav span {
+	width: 70px;
+	height: 40px;
+	border-bottom: solid 3px white;
+	display: block;
+	
+}
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../engine0/style.css" />
+<script type="text/javascript" src="../engine0/jquery.js"></script>
+<body>
+
+<a href="#"><nav class="right_nav">
+		<span style="background: gray; color: white;">^<br>TOP
+		</span>
+	</nav></a>
+
+   <div class="fixed-top">
+      <div class="collapse" id="navbarToggleExternalContent">
+         <div style="background-color: #951e13;">
+            <!-- 숨기기색상1 -->
+
+            <!-- 위에 네비 -->
+            <ul class="nav justify-content-end" style="background-color: #951e13;">
+
+               <li class="nav-item"><a class="nav-link" href="#" id="a">자주묻는질문(FAQ)</a></li>
+               <li class="nav-item"><a class="nav-link"href="../login/hogu_log.html" id="a">로그인/회원가입</a></li>
+               <li class="nav-item"><a class="nav-link" href="lms.html" id="a">LMS</a></li>
+               <li class="nav-item dropdown pr-5"><a class="nav-link dropdown-toggle" 
+                   data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="a">언어</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#" id="a">한국어</a> 
+                     <a class="dropdown-item" href="#" id="a">English</a> 
+                     <a class="dropdown-item" href="#" id="a">日本語</a>
+                  </div></li>
+               <form class="d-flex pr-5 pt-1 pb-1">
+                  <input class="form-control mr-1" type="search" placeholder="Search" aria-label="Search" id="a">
+                  <button class="btn btn btn-outline-light-success" type="submit">
+                     <span style="color: white">Search</span>
+                  </button>
+               </form>
+            </ul>
+
+            <!-- 아래네비 -->
+            <nav class="navbar navbar-expand-lg  navbar-light bg-light" style="font-size: 30px">
+               <a class="navbar-brand pl-5" href="../index.html">
+               <img src="../img/logo3.png" width=auto height="80"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false"> 소개 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="../page/소개_총장말씀.html">총장말씀</a> 
+                           <a class="dropdown-item" href="../page/소개_연혁.html">연혁</a>
+                           <a class="dropdown-item" href="../page/소개_비전.html">비전</a>
+                           <a class="dropdown-item" href="../page/소개_상징.html">상징</a> 
+                           <a class="dropdown-item" href="../page/소개_오시는길.html">오시는 길</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                         data-toggle="dropdown" aria-expanded="false"> 연구 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="../page/연구_마법연구.html">마법연구</a> 
+                           <a class="dropdown-item" href="../page/연구_협회.html">협회</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                         data-toggle="dropdown" aria-expanded="false"> 입학 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="../page/입학_입학안내.html">입학안내</a> 
+                           <a class="dropdown-item" href="../page/입학_과정안내.html">과정안내</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                         data-toggle="dropdown" aria-expanded="false"> 생활 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="../page/생활_기숙사.html">기숙사</a> 
+                           <a class="dropdown-item" href="../page/생활_구내식당.html">구내식당</a> 
+                           <a class="dropdown-item" href="../page/생활_학생커뮤니티.html">학생커뮤니티</a> 
+                           <a class="dropdown-item" href="../page/생활_기타시설.html">기타시설</a>
+                        </div></li>
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                         data-toggle="dropdown" aria-expanded="false"> 갤러리 </a>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="../page/갤러리_동아리활동.html">동아리활동</a> 
+                           <a class="dropdown-item" href="../page/갤러리_학과활동.html">학과활동</a>
+                        </div></li>
+                  </ul>
+               </div>
+            </nav>
+
+         </div>
+      </div>
+      <nav class="navbar navbar-dark" style="background-color: #951e13;">
+         <!-- 숨기기색상2 -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+      </nav>
+   </div>
+
+
+
+   <div id="bf">
+
+      <div id="b">
+
+         <div class="container-md mt-0 p-0">
+            <!-- 메인페이지 -->
+            <div class="container-md mt-0 p-0">
+               <!-- 본문 -->
+               <div class="d-flex flex-row-reverse text-dark"
+                  style="margin-top: 100px">
+
+                  <p class="mr-5" style="font-size: 13px;" id="topmenu">
+                     <a href="../index.html">HOME</a> > <a href="#">소개</a> > <a href="#">상징</a>
+                     <!-- 이동할 페이지 링크 -->
+                  </p>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-3">
+                        <!-- 옆에메뉴 -->
+                        <div class="pt-0 ml-5" style="height: auto; width: auto"
+                           id="sidenav1">
+                           <ul id="sidenav" class="nav flex-column"
+                              style="font-size: 20px;">
+                              <p style="font-size: 35px; font-weight: bolder;">소개</p>
+                              <br>
+                              <li class="nav-item"><a class="nav-link" href="소개_총장말씀.html">총장말씀</a></li>
+							  <li class="nav-item"><a class="nav-link" href="소개_연혁.html">연혁</a></li>
+							  <li class="nav-item"><a class="nav-link" href="소개_비전.html">비전</a></li>
+                              <li class="nav-item"><a class="nav-link" href="소개_상징.html"
+                                 style="color: #951e13; font-weight: bolder;">상징</a></li>
+                              <li class="nav-item"><a class="nav-link" href="소개_오시는길.html">오시는길</a></li>
+
+                           </ul>
+                        </div>
+
+                     </div>
+                     <div class="col-8">
+                        <p style="color: #951e13; font-size: 35px">상징</p>
+                        <div class="row">
+                           <div class="col">
+                              <hr style="border: solid 5px; border-color: #951e13;">
+                           </div>
+                        </div>
+                        <br>
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="col">
+                                <img src="../img/그리핀도르.jpg" alt="gryffindor" width="300px" height="500px">
+                            </div>
+                            <div class="col">
+                              <p style="color: #951e13; font-weight: bolder; font-size: 25px">고드릭 그리핀도르<br>[Sir Godric Gryffindor]</p>
+                              <p style="color: #ff0000; font-weight: bolder; font-size: 20px; font-style:italic;">"그 이름에 걸맞은 용기를 지닌 아이들은 누구나 가르치도록 하세."</p>
+                              <p style="font-weight: bolder; font-size: 20px;">
+                                <br>
+                                그리핀 도르의 특징<br><br>
+                                용기를 보여주는 아이들<br>
+                                상징 동물 사자<br>
+                                용감하고 대담한 자들을 위한 기숙사<br>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="col">
+                              <p style="color: #951e13; font-weight: bolder; font-size: 25px">살라자르 슬리데린<br>[Salazar Slytherin]</p>
+                              <p style="color: #006600; font-weight: bolder; font-size: 20px; font-style:italic;">"가장 순수한 혈통을 지닌 아이들만 그리치도록 하세"</p>
+                              <p style="font-weight: bolder; font-size: 20px;">
+                                <br>
+                                슬리데린의 특징<br><br>
+                                가장 순수한 혈통<br>
+                                상징 뱀<br>
+                                재간꾼들을 위한 기숙사<br>
+                              </p>
+                            </div>
+                            <div class="col">
+                                <img src="../img/슬리데린.jpg" alt="Slytherin" width="300px" height="500px">
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="col">
+                                <img src="../img/후플푸프.jpg" alt="gryffindor" width="300px" height="500px">
+                            </div>
+                            <div class="col">
+                              <p style="color: #951e13; font-weight: bolder; font-size: 25px">헬가 후플푸프<br>[Helga Hufflepuff]</p>
+                              <p style="color: #ffcc00; font-weight: bolder; font-size: 20px; font-style:italic;">"나는 그 아이들을<br>똑같이 가르칠 걸세"</p>
+                              <p style="font-weight: bolder; font-size: 20px;">
+                                <br>
+                                후플푸프의 특징<br><br>
+                                모든 아이들을 평등하게<br>
+                                상징동물 오소리<br>
+                                진실하고 거짓이 없는 자들을<br> 위한 기숙사<br>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="col">
+                              <p style="color: #951e13; font-weight: bolder; font-size: 25px">로위너 레번클로<br>[Rowena Ravenclaw]</p>
+                              <p style="color: #0033ff; font-weight: bolder; font-size: 20px; font-style:italic;">"가장 똑똑한 아이들만<br>가르치도록 하세"</p>
+                              <p style="font-weight: bolder; font-size: 20px;">
+                                <br>
+                                레번클로의 특징<br><br>
+                                가장 똑똑한 아이들<br>
+                                상징 독수리<br>
+                                지혜롭고 사려깊은 자들을<br> 위한 기숙사<br>
+                              </p>
+                            </div>
+                            <div class="col">
+                                <img src="../img/레번클로.jpg" alt="Ravenclaw" width="300px" height="500px">
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+
+
+
+         </div>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+         crossorigin="anonymous"></script>
+
+      <footer
+         class="container-fluid navbar-fixed-bottom bg-dark mt-auto text-left text-white">
+         <!-- Grid container -->
+         <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+               <p style="color: white">사업자명 : 구본우
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-mail : hwmagic@hwschool.com
+               <p style="color: white">☎TEL : 02-1111-2222
+                  &nbsp;&nbsp;&nbsp;&nbsp; 주소 : UK where-ddd-aaaa-ccc
+               <p style="color: white">설립일 : 1998/08/22
+            </section>
+            <!-- Section: Social media -->
+         </div>
+         <!-- Grid container -->
+
+         <!-- Copyright -->
+         <div class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright: <a class="text-white"
+               href="#">호그와트.com</a>
+         </div>
+         <!-- Copyright -->
+      </footer>
+   </div>
+</body>
+</html>
